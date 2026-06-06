@@ -1,11 +1,16 @@
+# Zhechen Shi's Homepage
 
->  # **NOTE:** This repository is NOT a template.
+Personal academic homepage for Zhechen Shi, built for GitHub Pages.
 
+The site presents education, research projects, talks, awards, skills, and service experience, with content adapted from the Chinese and English CVs plus the debut presentation "Can You TELL the Music?"
 
-## Want to build your own?
-Please use the open-source template available here: **[senli1073/academic-homepage-template](https://github.com/senli1073/academic-homepage-template)**. It includes documentation and is ready for you to customize.
+## Structure
 
+- `index.html`: static page shell and navigation.
+- `contents/`: editable Markdown and YAML content.
+- `static/assets/img/`: profile photo, hero image, and debut talk cover.
+- `static/css/main.css`: project-specific visual styling.
 
-## License
+## Attribution
 
-Copyright Sen Li, 2023-2026. Licensed under an MIT license.
+This repository was adapted from the open-source `academic-homepage-template` by Sen Li under the MIT license.

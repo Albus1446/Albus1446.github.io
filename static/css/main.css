@@ -2,11 +2,13 @@
 
 
 :root{
-    --h-title-color:#3948d2;
+    --h-title-color:#22577a;
+    --h-accent-color:#8c5a2b;
+    --h-soft-bg:#f7f8f5;
 }
 
 .header {
-    border-bottom: solid 2px var(--bs-blue);
+    border-bottom: solid 2px var(--h-title-color);
     z-index: 10000;
 }
 
@@ -19,11 +21,13 @@
     padding: 10rem 0;
     background-position: center;
     background-size: cover;
-    height: 25rem;
+    height: 28rem;
 }
 
 .top-section h2 {
-    font-weight: 400;
+    font-weight: 600;
+    max-width: 13ch;
+    text-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.65);
 }
 
 .top-section .top-section-content {
@@ -38,7 +42,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(90deg, rgba(5, 15, 24, 0.78), rgba(5, 15, 24, 0.34));
 }
 
 section header h2{
@@ -49,18 +53,35 @@ section header h2{
 }
 
 section .main-body{
-    font-size: 1.3rem;
+    font-size: 1.16rem;
     font-weight: 200;
-    line-height: 2.4rem;
+    line-height: 2rem;
+}
+
+section .main-body h4 {
+    color: #18384f;
+    margin-top: 1.75rem;
+}
+
+section .main-body h4:first-child {
+    margin-top: 0;
+}
+
+section .main-body a {
+    color: var(--h-title-color);
+}
+
+section .main-body strong {
+    color: #172632;
 }
 
 
 .bg-gradient-primary-to-secondary-light {
-    background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
+    background: #ffffff !important;
 }
 
 .bg-gradient-primary-to-secondary-gray {
-    background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+    background: var(--h-soft-bg) !important;
 }
 
 
@@ -100,7 +121,21 @@ section .main-body{
 
 #avatar img {
     height: max(130px,min(200px,calc(100vw/6)));
+    width: max(130px,min(200px,calc(100vw/6)));
+    object-fit: cover;
+    object-position: center 18%;
+    border: 5px solid #ffffff;
+    border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.talk-cover {
+    display: block;
+    width: min(100%, 780px);
+    margin: 0 0 1.5rem;
+    border: 1px solid rgba(34, 87, 122, 0.16);
+    border-radius: 8px;
+    box-shadow: 0 0.7rem 1.8rem rgba(23, 38, 50, 0.12);
 }
 
 @media screen and (max-width: 991px) {
@@ -109,4 +144,20 @@ section .main-body{
     }
 }
 
+@media screen and (max-width: 575px) {
+    .top-section {
+        height: 22rem;
+        padding: 8rem 0;
+    }
+
+    section header h2 {
+        font-size: 1.85rem;
+        line-height: 2.6rem;
+    }
+
+    section .main-body {
+        font-size: 1.04rem;
+        line-height: 1.75rem;
+    }
+}
 
