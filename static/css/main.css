@@ -1,163 +1,74 @@
-@import "./styles.css";
-
-
-:root{
-    --h-title-color:#22577a;
-    --h-accent-color:#8c5a2b;
-    --h-soft-bg:#f7f8f5;
+:root {
+    --navy: #141521;
+    --deep-blue: #2D3C81;
+    --accent-blue: #4EA4EF;
+    --light-blue: #DAE2ED;
+    --warm-neutral: #937562;
+    --soft-background: #f5f7fa;
+    --thin-border: #d7deea;
 }
-
-.header {
-    border-bottom: solid 2px var(--h-title-color);
-    z-index: 10000;
+html { scroll-behavior: smooth; }
+body { color: var(--navy); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+.container { max-width: 1050px; padding-left: 2rem; padding-right: 2rem; }
+a { color: var(--deep-blue); text-underline-offset: 0.2em; }
+a:hover { color: var(--navy); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent-blue); outline-offset: 4px; }
+.skip-link { position: fixed; top: -5rem; left: 1rem; z-index: 2000; padding: 0.7rem 1rem; background: white; border-radius: 8px; }
+.skip-link:focus { top: 0.7rem; }
+.header { min-height: 74px; background: white; border-bottom: 1px solid var(--thin-border); z-index: 1000; }
+.header .navbar-brand { color: var(--navy); font-weight: 700; font-size: 1.15rem; }
+.header .nav-link { font-size: 0.9rem; font-weight: 500; color: var(--navy) !important; padding: 0.6rem 0.8rem !important; border-radius: 8px; }
+.header .nav-link:hover, .header .nav-link.active { color: var(--deep-blue) !important; background: #eef2f8; }
+.navbar-toggler { border: 1px solid var(--thin-border); border-radius: 8px; font-size: 0.9rem; color: var(--navy); padding: 0.55rem 0.8rem; }
+.top-section { margin-top: 74px; padding: 5.5rem 0; background: linear-gradient(115deg, var(--navy), var(--deep-blue)); color: white; }
+.hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) 200px; align-items: center; gap: 4rem; }
+.eyebrow, .section-label { font-size: 0.75rem; font-weight: 650; letter-spacing: 0.13em; text-transform: uppercase; }
+.eyebrow { color: var(--light-blue); margin-bottom: 1.3rem; }
+.top-section h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.6rem, 5vw, 3.8rem); line-height: 1.12; font-weight: 500; letter-spacing: -0.035em; margin: 0 0 1.5rem; max-width: 15ch; }
+.hero-focus { color: var(--light-blue); line-height: 1.7; max-width: 40rem; font-size: 1.05rem; }
+.hero-links { display: flex; gap: 1.6rem; flex-wrap: wrap; margin-top: 1.75rem; }
+.hero-links a { color: white; text-decoration: none; border-bottom: 1px solid var(--accent-blue); padding-bottom: 0.35rem; font-size: 0.9rem; }
+.hero-links a:hover { color: var(--accent-blue); }
+.hero-portrait { margin: 0; text-align: center; }
+.hero-portrait img { width: 200px; height: 200px; object-fit: cover; object-position: center 18%; border: 3px solid #DAE2ED; border-radius: 12px; }
+.hero-portrait figcaption { font-size: 0.75rem; color: var(--light-blue); line-height: 1.5; margin-top: 0.9rem; }
+.content-section { padding: 4rem 0; scroll-margin-top: 5.5rem; }
+.section-soft { background: var(--soft-background); border-top: 1px solid var(--thin-border); border-bottom: 1px solid var(--thin-border); }
+.section-label { color: var(--deep-blue); margin-bottom: 0.65rem; }
+.content-section header { margin-bottom: 2rem; }
+.content-section h2 { color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 3.5vw, 2.35rem); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em; }
+.main-body { max-width: 850px; font-size: 1.025rem; font-weight: 400; line-height: 1.85; overflow-wrap: anywhere; }
+.main-body h3, .main-body h4 { color: var(--deep-blue); font-family: inherit; font-weight: 650; font-size: 1.2rem; line-height: 1.45; margin: 2.4rem 0 0.9rem; scroll-margin-top: 6rem; }
+.main-body h3:first-child, .main-body h4:first-child { margin-top: 0; }
+.main-body p { margin-bottom: 1.1rem; }
+.main-body ul { padding-left: 1.3rem; }
+.main-body li { padding-left: 0.2rem; margin: 0.55rem 0; }
+.main-body li::marker { color: var(--warm-neutral); }
+.main-body strong { font-weight: 650; color: var(--navy); }
+.main-body code { color: var(--deep-blue); background: var(--light-blue); border-radius: 4px; padding: 0.1rem 0.35rem; }
+.talk-cover { display: block; width: min(100%, 720px); height: auto; margin: 1.5rem 0 2rem; border: 1px solid var(--thin-border); border-radius: 10px; }
+.bg-bottom { background: var(--navy); color: var(--light-blue); padding: 2.6rem 0; }
+.footer-layout { display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
+.motto { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 1.15rem; margin: 0 0 0.5rem; color: white; }
+#copyright-text { font-size: 0.8rem; margin: 0; }
+.footer-links { display: flex; gap: 1.2rem; }
+.footer-links a { font-size: 0.85rem; color: var(--light-blue); }
+@media (max-width: 991px) {
+    .navbar-collapse { padding: 0.75rem 0; }
+    .hero-layout { gap: 2rem; grid-template-columns: minmax(0, 1fr) 170px; }
+    .hero-portrait img { width: 170px; height: 170px; }
 }
-
-.bg-bottom {
-    background-color: var(--h-title-color);
+@media (max-width: 575px) {
+    .container { padding-left: 1.35rem; padding-right: 1.35rem; }
+    .top-section { padding: 3rem 0; }
+    .hero-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-portrait { text-align: left; display: flex; align-items: center; gap: 1rem; }
+    .hero-portrait img { width: 96px; height: 96px; }
+    .hero-portrait figcaption { max-width: 16ch; text-align: left; margin: 0; }
+    .hero-focus { font-size: 0.98rem; }
+    .hero-links { gap: 1.3rem; }
+    .content-section { padding: 2.75rem 0; }
+    .main-body { font-size: 1rem; line-height: 1.8; }
+    .footer-layout { align-items: flex-start; flex-direction: column; gap: 1.4rem; }
 }
-
-.top-section {
-    position: relative;
-    padding: 10rem 0;
-    background-position: center;
-    background-size: cover;
-    height: 28rem;
-}
-
-.top-section h2 {
-    font-weight: 600;
-    max-width: 13ch;
-    text-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.65);
-}
-
-.top-section .top-section-content {
-    position: relative;
-    z-index: 1;
-}
-
-.top-section:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(5, 15, 24, 0.78), rgba(5, 15, 24, 0.34));
-}
-
-section header h2{
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-    color: var(--h-title-color);
-    font-size: 2.3rem;
-    line-height: 4rem;
-}
-
-section .main-body{
-    font-size: 1.16rem;
-    font-weight: 200;
-    line-height: 2rem;
-}
-
-section .main-body h4 {
-    color: #18384f;
-    margin-top: 1.75rem;
-}
-
-section .main-body h4:first-child {
-    margin-top: 0;
-}
-
-section .main-body a {
-    color: var(--h-title-color);
-}
-
-section .main-body strong {
-    color: #172632;
-}
-
-
-.bg-gradient-primary-to-secondary-light {
-    background: #ffffff !important;
-}
-
-.bg-gradient-primary-to-secondary-gray {
-    background: var(--h-soft-bg) !important;
-}
-
-
-
-.on-top {
-    position: relative;
-    z-index: 10000;
-}
-
-.top-bg {
-    background-position: center;
-    background-size: fill;
-    width: 100%;
-    height: 100%;
-}
-
-.top-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-
-#avatar {
-    position: relative;
-    height: 0;
-    top:min(-65px,max(-100px,calc(-1*100vw/12)));
-    max-width: 55em;
-    margin: 0 1.5rem 0 0;
-    float: right;
-    z-index: 9000;
-}
-
-#avatar img {
-    height: max(130px,min(200px,calc(100vw/6)));
-    width: max(130px,min(200px,calc(100vw/6)));
-    object-fit: cover;
-    object-position: center 18%;
-    border: 5px solid #ffffff;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.talk-cover {
-    display: block;
-    width: min(100%, 780px);
-    margin: 0 0 1.5rem;
-    border: 1px solid rgba(34, 87, 122, 0.16);
-    border-radius: 8px;
-    box-shadow: 0 0.7rem 1.8rem rgba(23, 38, 50, 0.12);
-}
-
-@media screen and (max-width: 991px) {
-    #avatar {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .top-section {
-        height: 22rem;
-        padding: 8rem 0;
-    }
-
-    section header h2 {
-        font-size: 1.85rem;
-        line-height: 2.6rem;
-    }
-
-    section .main-body {
-        font-size: 1.04rem;
-        line-height: 1.75rem;
-    }
-}
-
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

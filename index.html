@@ -1,206 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Zhechen Shi academic homepage" />
-    <meta name="author" content="Zhechen Shi" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zhechen Shi is an Applied Physics undergraduate at Zhejiang University of Technology, interested in gravitational-wave astrophysics, exoplanet direct imaging, and space interferometry.">
+    <meta name="author" content="Zhechen Shi">
+    <title id="title">Zhechen Shi | Physics &amp; Astronomy</title>
+    <link rel="icon" href="static/assets/favicon.ico">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/main.css?v=20261013">
+    <script defer src="static/js/bootstrap.bundle.min.js"></script>
+    <script defer src="static/js/marked.min.js"></script>
+    <script defer src="static/js/js-yaml.min.js"></script>
     <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            startup: { typeset: false }
         };
     </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+    <script defer id="MathJax-script" src="static/js/tex-svg.js"></script>
+    <script defer src="static/js/scripts.js?v=20261013"></script>
 </head>
-
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" aria-label="Main navigation">
+        <div class="container">
+            <a id="page-top-title" class="navbar-brand" href="#page-top">Zhechen Shi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#research">RESEARCH</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#talks">SPEECH</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#skills">SKILLS</a>
-                    </li>
-
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#talks">Talks &amp; posters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Honors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Tools &amp; service</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+    <main>
+        <section class="top-section" aria-labelledby="top-section-bg-text">
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow">Applied Physics undergraduate</p>
+                    <h1 id="top-section-bg-text">Physics &amp; Astronomy</h1>
+                    <p class="hero-focus">Gravitational-wave astrophysics · Exoplanet direct imaging · Space interferometry</p>
+                    <div class="hero-links">
+                        <a href="#research">Explore my research <span aria-hidden="true">↗</span></a>
+                        <a href="mailto:zhechenshi.physics@gmail.com">Get in touch</a>
+                    </div>
+                </div>
+                <figure class="hero-portrait">
+                    <img src="static/assets/img/photo.png" alt="Portrait of Zhechen Shi" width="200" height="200">
+                    <figcaption>Zhejiang University of Technology</figcaption>
+                </figure>
             </div>
-        </div>
-    </section>
-    <!-- Top Section -->
+        </section>
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
-    </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
-
-    <!-- Research -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="research">
-        <div class="container px-5">
-            <header>
-                <h2 id="research-subtitle"><i class="bi bi-stars"></i>&nbsp;RESEARCH & PROJECTS</h2>
-            </header>
-            <div class="main-body" id="research-md"></div>
-
-        </div>
-    </section>
-    <!-- Research  -->
-
-    <!-- Talks -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="talks">
-        <div class="container px-5">
-            <header>
-                <h2 id="talks-subtitle"><i class="bi bi-mic-fill"></i>&nbsp;SPEECH</h2>
-            </header>
-            <div class="main-body" id="talks-md"></div>
-
-        </div>
-    </section>
-    <!-- Talks  -->
-
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
-        </div>
-    </section>
-    <!-- Awards -->
-
-    <!-- Skills -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="skills">
-        <div class="container px-5">
-            <header>
-                <h2 id="skills-subtitle"><i class="bi bi-tools"></i>&nbsp;SKILLS & SERVICE</h2>
-            </header>
-            <div class="main-body" id="skills-md"></div>
-
-        </div>
-    </section>
-    <!-- Skills -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/Albus1446">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="LICENSE">License</a>
+        <section class="content-section" id="home" aria-labelledby="home-subtitle">
+            <div class="container">
+                <header><p class="section-label">About</p><h2 id="home-subtitle">Zhechen Shi · 史喆宸</h2></header>
+                <div class="main-body" id="home-md">
+                    <!-- CONTENT:home:START -->
+<p>I am an undergraduate in <strong>Applied Physics</strong> at the School of Physics &amp; Optical Engineering, <strong>Zhejiang University of Technology</strong>. My research interests center on <strong>gravitational-wave astrophysics</strong> and the <strong>direct imaging of exoplanets through space interferometry</strong>, alongside cold-atom physics and quantum precision measurement.</p>
+<p>Through undergraduate research training, I am developing experience in scientific data analysis, numerical modeling, and experimental optics. I am interested in how precise instruments and computational methods can recover weak astrophysical signals and connect observations with physical models.</p>
+<h3>Research interests</h3>
+<ul>
+<li><strong>Gravitational-wave astrophysics:</strong> data analysis and statistical methods for space-based observatories, including LISA, TianQin, and Taiji.</li>
+<li><strong>Exoplanet direct imaging and interferometry:</strong> high-contrast observations, space-based optical/infrared interferometry, and nulling techniques.</li>
+<li><strong>Cold atoms and quantum precision measurement:</strong> laser cooling and trapping, optical systems, and experimental image analysis.</li>
+</ul>
+<h3>Education</h3>
+<ul>
+<li><strong>Applied Physics</strong>, School of Physics &amp; Optical Engineering, Zhejiang University of Technology · 2025–present.</li>
+<li><strong>Polymer Materials and Engineering</strong>, College of Materials Science and Engineering, Zhejiang University of Technology · 2024–2025.</li>
+</ul>
+<p>Academic rank: <strong>3 / 125</strong>.</p>
+<h3>Contact</h3>
+<p>I welcome discussions about gravitational-wave data analysis, exoplanet observations, and scientific computing.</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:zhechenshi.physics@gmail.com">zhechenshi.physics@gmail.com</a></li>
+<li><strong>Academic email:</strong> <a href="mailto:302024549082@zjut.edu.cn">302024549082@zjut.edu.cn</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/Albus1446">Albus1446</a></li>
+<li><strong>WeChat:</strong> szzc3655</li>
+</ul>
+                    <!-- CONTENT:home:END -->
+                </div>
             </div>
+        </section>
+        <section class="content-section section-soft" id="research" aria-labelledby="research-subtitle">
+            <div class="container">
+                <header><p class="section-label">Research</p><h2 id="research-subtitle">Research experience &amp; projects</h2></header>
+                <div class="main-body" id="research-md">
+                    <!-- CONTENT:research:START -->
+<h3>Gravitational-wave data analysis</h3>
+<p><strong>Undergraduate research training</strong></p>
+<ul>
+<li>Research training at Taiji Laboratory and participation in an undergraduate innovation training project in gravitational-wave astrophysics at the National Astronomical Observatories, Chinese Academy of Sciences (NAOC).</li>
+<li>Developing experience in gravitational-wave data analysis and the relationship between observational signals and astrophysical models.</li>
+</ul>
+<h3>Space interferometry and exoplanets</h3>
+<p><strong>Undergraduate project work</strong></p>
+<ul>
+<li>Research training in space interferometry and exoplanet observation.</li>
+<li>Exploring the relationship between observational methods and scientific objectives, with interests in direct imaging, high-contrast observations, and nulling interferometry.</li>
+</ul>
+<h3>Compact magneto-optical trap teaching platform</h3>
+<p><strong>Member, Provincial Key Laboratory of Quantum Precision Measurement</strong> · November 2025–present</p>
+<ul>
+<li>Participating in the development of a compact magneto-optical trap (MOT) teaching platform at Zhejiang University of Technology.</li>
+<li>Supporting construction and improvement of the probe and vacuum subsystems, and assisting with cooling/pumping beam alignment.</li>
+<li>Working on CCD-based atom-number estimation and a science communication webpage for the platform.</li>
+</ul>
+<h3>SERF magnetometer-based cellular magnetic signal experiment</h3>
+<p><strong>Undergraduate project lead</strong> · April–October 2025</p>
+<ul>
+<li>Received the Outstanding Award in the China Undergraduate Physics Experiment Tournament.</li>
+<li>Led experimental data processing and built AI agent workflow scripts and documentation for preprocessing, feature extraction, and visualization.</li>
+<li>Topics: quantum precision measurement, MEMS, microfluidic chips, and biomagnetic field signals.</li>
+</ul>
+<h3>Shenchen: AI agent for astronomical observation planning</h3>
+<p><strong>Undergraduate project lead</strong> · June–July 2025</p>
+<ul>
+<li>Won Second Prize in the GeoGPT Model Application Practice Pilot Competition.</li>
+<li>Built an astronomical observation planning AI agent and an MCP workflow for nighttime light data retrieval.</li>
+<li>Topics: raster data processing, light-pollution modeling, and AI-assisted scientific workflows.</li>
+<li><a href="https://github.com/Albus1446/shenchen">Project repository</a></li>
+</ul>
+<h3>Open projects and writing</h3>
+<ul>
+<li><strong><a href="https://github.com/Albus1446/coldatom-CCDimage-procession">Cold-atom CCD image analysis</a></strong> — Absorption-image processing, optical-depth calculation, atom-number estimation, and two-dimensional Gaussian fitting. Adapted from <code>TakatoPhy/coldatom-imaging</code>, with an experimental-data notebook and example visualizations.</li>
+<li><strong><a href="https://drive.google.com/file/d/1pbB76D-bsD7IpXMR53czw3x6gxrOpwWN/view?usp=share_link">Exploratory gravitational-wave research report</a></strong> — Preliminary modeling and research notes on gravitational-wave data analysis and possible gravity-theory corrections (May 2026).</li>
+</ul>
+                    <!-- CONTENT:research:END -->
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="talks" aria-labelledby="talks-subtitle">
+            <div class="container">
+                <header><p class="section-label">Academic exchange</p><h2 id="talks-subtitle">Talks &amp; posters</h2></header>
+                <div class="main-body" id="talks-md">
+                    <!-- CONTENT:talks:START -->
+<h3>AI development platforms for astronomy association projects</h3>
+<p><strong>2025 Annual Meeting of the Zhejiang Astronomical Society</strong> · 12–14 December 2025</p>
+<p>Delivered a 15-minute talk on applying AI development platforms to astronomy association project construction and practice.</p>
+<img class="talk-cover" src="static/assets/img/speech-2025-zas.jpg" alt="Cover of the talk on AI development platforms for astronomy association projects" loading="lazy">
+
+<h3>Posters and academic exchange</h3>
+<ul>
+<li>Poster presentation at <strong>AI+ Academic Conference 2026</strong>, administered by UniHive and held at Clare Hall and Murray Edwards College, University of Cambridge.</li>
+<li>Participation in the <strong>Undergraduate Astronomy Forum at Westlake University</strong>.</li>
+<li>Summer study in Cambridge and a particle physics summer school at <strong>Fudan University</strong>.</li>
+</ul>
+                    <!-- CONTENT:talks:END -->
+                </div>
+            </div>
+        </section>
+        <section class="content-section section-soft" id="awards" aria-labelledby="awards-subtitle">
+            <div class="container">
+                <header><p class="section-label">Recognition</p><h2 id="awards-subtitle">Selected honors</h2></header>
+                <div class="main-body" id="awards-md">
+                    <!-- CONTENT:awards:START -->
+<ul>
+<li><strong>Best Poster Award</strong>, <a href="https://www.clarehall.cam.ac.uk/events/sdg-ai-academic-conferences-2026/">AI+ Academic Conference 2026</a> — administered by UniHive and held at Clare Hall and Murray Edwards College, University of Cambridge.</li>
+<li><strong>Best Poster</strong>, Undergraduate Astronomy Forum, Westlake University.</li>
+<li><strong>Finalist</strong>, MCM/ICM 2026, Problem B — space elevator transportation planning for lunar base construction.</li>
+<li><strong>Zhejiang Provincial Government Scholarship</strong>.</li>
+<li><strong>Outstanding Award</strong>, China Undergraduate Physics Experiment Tournament — SERF magnetometer project.</li>
+<li><strong>Second Prize</strong>, GeoGPT Model Application Practice Pilot Competition — Shenchen observation planning project.</li>
+</ul>
+                    <!-- CONTENT:awards:END -->
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="skills" aria-labelledby="skills-subtitle">
+            <div class="container">
+                <header><p class="section-label">Methods &amp; community</p><h2 id="skills-subtitle">Tools, coursework &amp; service</h2></header>
+                <div class="main-body" id="skills-md">
+                    <!-- CONTENT:skills:START -->
+<h3>Scientific computing and analysis</h3>
+<p>Python, MATLAB, ROOT; experimental data analysis, numerical modeling, and scientific visualization.</p>
+<h3>Writing, optical design, and research tools</h3>
+<p>LaTeX, Overleaf, Zotero, Visio, draw.io, Ansys Zemax OpticStudio, AutoCAD, Scimaster, and ChatGPT. Experience with Windows, Linux, and macOS.</p>
+<h3>Coursework</h3>
+<p>Advanced Mathematics I; Linear Algebra B; Python Programming; College Physics Experiment A; University Physics; Methods of Mathematical Physics; Introduction to Astronomy; Astronomy Today; Quantum Mechanics; Statistical Mechanics; Electrodynamics; Quantum Optics.</p>
+<h3>Languages and service</h3>
+<ul>
+<li>English: CET-6 <strong>481</strong>; CET-4 <strong>599</strong>; experience reading English academic literature.</li>
+<li>Deputy Leader, Zhejiang University of Technology Astronomy Association.</li>
+<li>Deputy Director of Academic Affairs, Zhejiang University of Technology AI Association.</li>
+<li>Department Assistant, Nano New Media Studio.</li>
+</ul>
+                    <!-- CONTENT:skills:END -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-bottom">
+        <div class="container footer-layout">
+            <div><p class="motto">Per aspera ad astra.</p><p id="copyright-text">© Zhechen Shi 2026</p></div>
+            <div class="footer-links"><a href="https://github.com/Albus1446">GitHub</a><a href="https://github.com/Albus1446/Albus1446.github.io">Source</a><a href="LICENSE">License</a></div>
         </div>
     </footer>
-
 </body>
-
 </html>

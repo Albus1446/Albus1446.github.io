@@ -1,4 +1,6 @@
-
-- Zhejiang Provincial Government Scholarship.
-
-- Finalist Award, MCM/ICM 2026, COMAP Mathematical Contest in Modeling, Problem B on space elevator transportation planning for lunar base construction.
+- **Best Poster Award**, [AI+ Academic Conference 2026](https://www.clarehall.cam.ac.uk/events/sdg-ai-academic-conferences-2026/) — administered by UniHive and held at Clare Hall and Murray Edwards College, University of Cambridge.
+- **Best Poster**, Undergraduate Astronomy Forum, Westlake University.
+- **Finalist**, MCM/ICM 2026, Problem B — space elevator transportation planning for lunar base construction.
+- **Zhejiang Provincial Government Scholarship**.
+- **Outstanding Award**, China Undergraduate Physics Experiment Tournament — SERF magnetometer project.
+- **Second Prize**, GeoGPT Model Application Practice Pilot Competition — Shenchen observation planning project.
