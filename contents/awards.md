@@ -1,7 +1,7 @@
 - **Best Poster Award**, [SDG & AI+ Academic Conferences 2026](https://www.clarehall.cam.ac.uk/events/sdg-ai-academic-conferences-2026/), Clare Hall, University of Cambridge.
 - **Finalist**, MCM/ICM 2026, Problem B (Space Elevator) — developed, within three days, a multi-objective optimization model for future payload transportation combining space elevators and rockets.
-- **Best Poster**, Undergraduate Astronomy Forum, Westlake University.
-- **Outstanding Award**, China Undergraduate Physics Experiment Tournament — SERF magnetometer project.
-- **Second Prize**, GeoGPT Model Application Practice Pilot Competition — Shenchen observation planning project.
 - **National Scholarship, 2026**.
 - Zhejiang Provincial Government Scholarship, 2025.
+- **Outstanding Award**, China Undergraduate Physics Experiment Tournament — SERF magnetometer project.
+- **Second Prize**, GeoGPT Model Application Practice Pilot Competition — Shenchen observation planning project.
+
