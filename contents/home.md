@@ -1,23 +1,23 @@
-I am an undergraduate in **Applied Physics** at the School of Physics & Optical Engineering, **Zhejiang University of Technology**. My research interests center on **gravitational-wave astrophysics** and the **direct imaging of exoplanets through space interferometry**, alongside cold-atom physics and quantum precision measurement.
+I am an undergraduate in **Applied Physics** at the School of Physics & Optical Engineering, **Zhejiang University of Technology**. My work sits where precise instruments meet faint astrophysical signals: **nulling interferometry for exoplanet observation**, **space-based gravitational-wave detection**, and **cold-atom experiments** for quantum precision measurement.
 
-Through undergraduate research training, I am developing experience in scientific data analysis, numerical modeling, and experimental optics. I am interested in how precise instruments and computational methods can recover weak astrophysical signals and connect observations with physical models.
+Through undergraduate research I am building experience in tolerance and sensitivity analysis, numerical modeling, and experimental optics, and I am interested in how instruments and computational methods together recover weak signals and connect observations with physical models.
 
 ### Research interests
 
-- **Gravitational-wave astrophysics:** data analysis and statistical methods for space-based observatories, including LISA, TianQin, and Taiji.
-- **Exoplanet direct imaging and interferometry:** high-contrast observations, space-based optical/infrared interferometry, and nulling techniques.
-- **Cold atoms and quantum precision measurement:** laser cooling and trapping, optical systems, and experimental image analysis.
+- **Exoplanets and nulling interferometry:** habitable planets, detection yield, array configuration, and high-contrast imaging.
+- **Gravitational-wave astrophysics:** sensitivity analysis, constellation design, global fit, and signal-to-noise ratio for space-based observatories.
+- **Cold atoms and quantum precision measurement:** magneto-optical traps, laser frequency locking, and optical path optimization.
 
 ### Education
 
 - **Applied Physics**, School of Physics & Optical Engineering, Zhejiang University of Technology · 2025–present.
 - **Polymer Materials and Engineering**, College of Materials Science and Engineering, Zhejiang University of Technology · 2024–2025.
 
-Academic rank: **3 / 125**.
+Overall rank: **3 / 70** · GPA rank: **5 / 70** · Zhejiang Provincial Government Scholarship.
 
 ### Contact
 
-I welcome discussions about gravitational-wave data analysis, exoplanet observations, and scientific computing.
+I welcome discussions about exoplanet interferometry, gravitational-wave data analysis, and scientific computing.
 
 - **Email:** [zhechenshi.physics@gmail.com](mailto:zhechenshi.physics@gmail.com)
 - **Academic email:** [302024549082@zjut.edu.cn](mailto:302024549082@zjut.edu.cn)

@@ -1,5 +1,5 @@
 const contentDir = 'contents/';
-const contentVersion = '20261013';
+const contentVersion = '20261116';
 const sectionNames = ['home', 'research', 'talks', 'awards', 'skills'];
 
 async function fetchText(path) {

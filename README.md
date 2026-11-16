@@ -2,7 +2,7 @@
 
 [Visit the website](https://albus1446.github.io/) · [GitHub profile](https://github.com/Albus1446)
 
-I am an Applied Physics undergraduate at Zhejiang University of Technology. My research interests center on gravitational-wave astrophysics, exoplanet direct imaging, and space interferometry, alongside cold-atom physics and quantum precision measurement.
+I am an Applied Physics undergraduate at Zhejiang University of Technology. My research covers exoplanet nulling interferometry, space-based gravitational-wave detection, and cold-atom experiments for quantum precision measurement.
 
 The website presents my education, undergraduate research training, projects, talks and posters, selected awards, and scientific tools. It distinguishes research training and exploratory work from established results.
 
